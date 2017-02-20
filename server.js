@@ -10,7 +10,7 @@ var articles ={
     title: "Article One - Vidya",
     heading: "Article One",
     date: "Feb 18th, 2017",
-    content: '                   <p>
+    content:                  <p>
                         This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
                     </p>
                     <p>
@@ -18,7 +18,7 @@ var articles ={
                     </p>
                     <p>
                         This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-                    </p>'
+                    </p>
 },
 'article-two'={
     title: "Article Two - Vidya",
