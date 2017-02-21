@@ -6,19 +6,15 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles ={
- 'article-one'={
-    title: "Article One - Vidya",
-    heading: "Article One",
-    date: "Feb 18th, 2017",
-    content:                  <p>
-                        This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-                            </p>
-                    <p>
-                        This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-                    </p>
-                    <p>
-                        This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-                    </p>
+'article-one'={
+    title: 'Article One - Vidya',
+    heading: 'Article One',
+    date: 'Feb 18th, 2017',
+    content:  '
+    <p>
+        This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
+   </p>'
+    
 },
 
 'article-two'={
@@ -45,8 +41,7 @@ function createtemplate (data){
     var date = data.date;
     var content = data.content;
     
-var template=
-<html>
+var htmltemplate='<html>
     <head>
         <title>
             ${title}
@@ -69,7 +64,7 @@ var template=
                 </div>
             </div>
         </body>
-</html>
+</html>'
 ;
 return htmltemplate;
 }
