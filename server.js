@@ -10,11 +10,8 @@ var articles ={
     title: 'Article One - Vidya',
     heading: 'Article One',
     date: 'Feb 18th, 2017',
-    content:  '
-    <p>
-        This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-   </p>'
-    
+    content:  'This is the content my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.'
+  
 },
 
 'article-two'={
