@@ -7,28 +7,35 @@ app.use(morgan('combined'));
 
 var articles = {
  'article-one' : {
-title: 'Article One - vidya',
+title: 'Article One / chethana',
 heading: 'Article One',
 date: 'February 16th, 2017',
-content:  
-        '<p> This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.</p>'
-        
+content:    ` 
+                <p>
+                    Spear fisherman Danny Henricks is fortunate enough to have survived the type of underwater experience that proves just how dangerous sea creatures can be -- and he even caught it all on video.
+                </p> `
 },
 
  'article-two' : {
-     title: 'Article Two - vidya',
+     title: 'Article Two / chethana',
 heading: 'Article Two',
 date: 'February 16th, 2017',
-content: 
-     '<p>This  is the content for my second. article </p> '
+content:   `  
+                <p>
+                    Spear fisherman Danny Henricks is fortunate enough to have survived the type of underwater experience that proves just how dangerous sea creatures can be -- and he even caught it all on video.
+                </p> '
  },
  
  'article-three' : {
-     title: 'Article Three - vidya',
+     title: 'Article Three / chethana',
 heading: 'Article Three',
 date: 'February 20th, 2017',
 content:     
-                '<p> This is the content for my third article </p> '
+                <p>
+                    Spear fisherman Danny Henricks is fortunate enough to have survived the type of underwater experience that proves just how dangerous sea creatures can be -- and he even caught it all on video.
+                    Henricks, 35, was fishing off the coast of Australia when a bull shark charged at him at full speed, only to impale himself on Danny's spear gun.
+                    The hair-raising clip has been video more than three million times (and counting) since Henricks uploaded it last month.
+                </p> '
  };
  
 
@@ -42,9 +49,7 @@ var htmltemplate =
 <html>
     <head>
         <title>
-        
-        ${title} 
-        
+            ${title}
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="/ui/style.css" rel="stylesheet" />
@@ -67,8 +72,8 @@ var htmltemplate =
         </body>
     </head>
 </html>
-;
-    return htmlTemplate;
+   ;
+   return htmlTemplate;
 }
 
 app.get('/', function (req, res) {
