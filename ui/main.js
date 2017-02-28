@@ -56,7 +56,4 @@ submit.onclick = function() {
     request.open('GET', 'http://vidyadesicrew.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
 };
-    // Make a request to the server and send the name
-    
-
-};
+  
