@@ -8,7 +8,7 @@ var config = {
     database: 'vidyadesicrew',
     host: 'db.imad.hasura-app.io',
     port: '5432',
-    password: 'Vidya@123'
+    password: 'db-vidyadesicrew-43835'
 };
 var app = express();
 app.use(morgan('combined'));
