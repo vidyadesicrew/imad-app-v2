@@ -17,6 +17,7 @@ var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 
+var pool = new Pool(config);
 function createTemplate (data) {
     var title = data.title;
     var date = data.date;
@@ -112,9 +113,7 @@ app.post('/login', function (req, res) {
                 var hashedpassword = has(password, salt); // Creating a hash based on the password submitted and the original salt
                 if(hashedPassword === dbString) {
                 res.send('credentials correct!');
-                } else {
-                     res.send(403).send('username/password is invalid');
-                }
+                } 
                 
             }
             
@@ -123,7 +122,7 @@ app.post('/login', function (req, res) {
     });
 });
 
-var pool = new Pool(config);
+
 app.get('/test-db', function(req, res) {
     // Make a select request
     // Return a response with result
