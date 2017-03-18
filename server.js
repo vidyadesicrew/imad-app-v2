@@ -17,7 +17,6 @@ var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 
-var pool = new Pool(config);
 function createTemplate (data) {
     var title = data.title;
     var date = data.date;
@@ -133,17 +132,17 @@ app.post('/login', function (req, res) {
 });
 
 
-app.get('/test-db', function(req, res) {
-    // Make a select request
-    // Return a response with result
-    pool.query('SELECT * FROM test', function (err, result) {
-        if (err) {
-            res.status(500).send(err.toString());
-        } else {
-            res.send('User successfully created: ' +username);
-        }
-        
-    });
+var pool = new Pool(config);
+app.get('/test-db', function (req, res) {
+   // make a select request 
+   // return a response with the results
+   pool.query('SELECT * FROM test', function (err, result) {
+       if (err) {
+           res.status(500).send(err.toString());
+       } else {
+           res.send(JSON.stringify(result.rows));
+       }
+   });
 });
 
 var counter = 0;
