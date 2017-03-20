@@ -17,6 +17,7 @@ var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 
+var pool = new Pool(config);
 function createTemplate (data) {
     var title = data.title;
     var date = data.date;
@@ -124,7 +125,7 @@ app.post('/login', function (req, res) {
     
      
        } else {
-         res.send(403).send('username/password is invalid');
+         res.status(403).send('invalid username/passwd');
           }
           }
        }
@@ -132,7 +133,7 @@ app.post('/login', function (req, res) {
 });
 
 
-var pool = new Pool(config);
+
 app.get('/test-db', function (req, res) {
    // make a select request 
    // return a response with the results
