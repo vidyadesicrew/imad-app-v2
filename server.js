@@ -16,6 +16,7 @@ var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 
+var pool = new Pool(config);
 function createTemplate (data) {
     var title = data.title;
     var date = data.date;
@@ -103,7 +104,7 @@ app.post('/login', function (req, res) {
             res.status(500).send(err.toString());
         } else {
             if (result.rows.length === 0){
-                res.send(403).send('username/password is invalid');
+                res.status(403).send('username/password is invalid');
             } else {
                 // Match the password
                 var dbString = result.rows[0].password;
@@ -112,7 +113,7 @@ app.post('/login', function (req, res) {
                 if(hashedPassword === dbString) {
                 res.send('credentials correct!');
                 } else {
-                     res.send(403).send('username/password is invalid');
+                     res.status(403).send('username/password is invalid');
                 }
                 
             }
@@ -122,7 +123,7 @@ app.post('/login', function (req, res) {
     });
 });
 
-var pool = new Pool(config);
+
 app.get('/test-db', function(req, res) {
     // Make a select request
     // Return a response with result
