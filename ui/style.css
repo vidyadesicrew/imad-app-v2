@@ -15,9 +15,8 @@ body {
     font-weight: bold;
 }
 
-.img-circle {
-    height: 140px;
-    width: 140px;
+.img-medium {
+    height: 200px;
 }
 
 .container{
