@@ -101,3 +101,6 @@ header img {
   height: 100px;
   background: #555;
 }
+.big {
+    line-height: 200%;
+}
