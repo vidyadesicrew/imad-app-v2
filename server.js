@@ -261,18 +261,6 @@ app.get('/articles/:articleName', function (req, res) {
       
 });
 
-app.get('/About', function (req, res) {
-    // articleName == article-one
-    // articles[articleName] == {} content object for article one
-    
-    // SELECT * FROM About 
-      pool.query("SELECT * FROM About,function (err, result) 
-          
-      });
-      
-});
-
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
