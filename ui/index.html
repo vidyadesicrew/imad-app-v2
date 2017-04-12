@@ -4,14 +4,18 @@
         <link href="/ui/style.css" rel="stylesheet" />
         </head>
         <body>
-            <script src="demo_time.js"></script>
+ <p><img src="http://logos.textgiraffe.com/logos/logo-name/Vidya-designstyle-kiddo-m.png" width="336" height="69" text-align="center"></p>
 
-<p id="timePara"><button onclick="getDateTime()">Get Date and Time</button></p>
+<p id="demo"></p>
 
-<p style="float:center"><img src="http://logos.textgiraffe.com/logos/logo-name/Vidya-designstyle-kiddo-m.png" width="336" height="69" text-align="center"></p>
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
+</script>
+
 
   <marquee bgcolor="blue" style="color:white;width:100%;" onmouseover="this.stop()" onmouseout="this.start()"><br />
-    <b>WELCOME TO MY FIRST WEB APP.</b><br />
+    <b>WELCOME TO MY FIRST WEB APP.</b><br />   
 </marquee>
            <style>
      body
