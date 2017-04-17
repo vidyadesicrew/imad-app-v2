@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: Times New Roman;
     margin-top: 0;
 }
 
@@ -22,7 +22,7 @@ body {
         max-width: 800px;
         margin: 0 auto;
         color: Black ;
-        font-family: cambria;
+        font-family: Times New Roman;
         padding-left: 20px;
         padding-right: 20px;
      } 
