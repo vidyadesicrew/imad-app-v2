@@ -104,3 +104,9 @@ header img {
 .big {
     line-height: 200%;
 }
+
+head img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
