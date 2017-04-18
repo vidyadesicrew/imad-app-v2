@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: Times New Roman;
     margin-top: 0;
 }
 
@@ -21,8 +21,8 @@ body {
 .container {
         max-width: 800px;
         margin: 0 auto;
-        color: pink;
-        font-family: cambria;
+        color: Black ;
+        font-family: Times New Roman;
         padding-left: 20px;
         padding-right: 20px;
      } 
@@ -31,6 +31,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #333;
 }
 
 .commenter {
@@ -102,4 +103,10 @@ header img {
 }
 .big {
     line-height: 200%;
+}
+
+head img {
+  float: left;
+  width: 100px;
+  height: 100px;
 }
