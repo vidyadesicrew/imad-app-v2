@@ -131,7 +131,7 @@ input[type=text]:focus {
 }
 
 footer.footer {
-    height: 30px;
+    height: 50px;
     width: 100%;
     background-color: #333333;
 }
@@ -139,5 +139,5 @@ footer.footer {
 p.copyright {
     color: #fff;
     line-height: 40px;
-    font-size: 0.7em;
+    font-size: 0.10em;
 }
