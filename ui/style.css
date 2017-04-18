@@ -103,3 +103,9 @@ header img {
 .big {
     line-height: 200%;
 }
+head ul{
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: AliceBlue;
+}
