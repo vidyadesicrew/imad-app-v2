@@ -109,3 +109,7 @@ head ul{
     padding: 0;
     overflow: hidden;
 }
+
+#wrapper {
+	background-color: red;
+}
