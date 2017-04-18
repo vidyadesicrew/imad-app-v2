@@ -103,13 +103,3 @@ header img {
 .big {
     line-height: 200%;
 }
-head ul{
-  list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-#wrapper {
-	background-color: red;
-}
