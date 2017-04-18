@@ -110,16 +110,3 @@ head img {
   width: 100px;
   height: 100px;
 }
-
-footer.footer {
-    height: 50px;
-    width: 100%;
-    background-color: #333333;
-}
-
-p.copyright {
-    color: #fff;
-    line-height: 40px;
-    font-size: 1.0em;
-    text-align: center;
-}
