@@ -104,8 +104,9 @@ header img {
     line-height: 200%;
 }
 head ul{
-  float: left;
-  width: 100px;
-  height: 100px;
-  background: AliceBlue;
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: AliceBlue;
 }
