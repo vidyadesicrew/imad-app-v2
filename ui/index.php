@@ -24,7 +24,7 @@ label{display:inline-block;width:100px;margin-bottom:10px;}
 <input type="text" name="email" />
  
 <br />
-<input type="submit" value="Add Employee">
+<input type="submit" value="Add User">
 </form>
  
  
