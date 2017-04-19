@@ -112,7 +112,7 @@ head img {
 }
 .footer {
     position:fixed;bottom:0;
-    width:100%;
+    width:50%;
     display:block;
     color: black;
 }
