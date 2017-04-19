@@ -111,7 +111,8 @@ head img {
   height: 100px;
 }
 .footer {
-    position:fixed;bottom:0;
+    position:fixed;
+    bottom:0;
     width:50%;
     display:block;
     text-decoration: none;
