@@ -262,6 +262,7 @@ app.get('/articles/:articleName', function (req, res) {
 });
 app.get('/signup.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'signup.html'));
+});
 app.get('/contact.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
 });
